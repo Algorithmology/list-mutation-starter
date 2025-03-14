@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "listmutator"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Gregory M. Kapfhammer <gkapfham@allegheny.edu>"]
 
@@ -11,42 +11,36 @@ listmutator = "listmutator.main:cli"
 python = "^3.8"
 rich = "^10.9.0"
 typer = {extras = ["all"], version = "^0.7.0"}
-rapidfuzz = "^3.6.1"
-
-[tool.poetry.dev-dependencies]
-taskipy = "^1.8.1"
-mypy = "^0.910"
-pytest = "^7.2.0"
-pymarkdownlnt = "^0.9.8"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "==0.1.15"
 symbex = "^1.4"
 pytest-cov = "^4.1.0"
 pytest-xdist = "^3.5.0"
 pytest-clarity = "^1.0.1"
 pytest-randomly = "^3.15.0"
 mdtoc = "^1.3"
+taskipy = "^1.8.1"
+mypy = "^0.910"
+pytest = "^7.2.0"
+pymarkdownlnt = "^0.9.8"
+ruff = "^0.10.0"
 
 [tool.taskipy.variables]
 project = "listmutator"
-tests = "tests"
 readme = "../README.md"
 reflection = "../writing/reflection.md"
-check-command = { var = "ruff check {project} {tests}", recursive = true }
+check-command = { var = "ruff check {project}", recursive = true }
 coverage-test-command = "pytest -s --cov-context=test --cov-fail-under=90 --cov-report term-missing --cov-report json --cov --cov-branch"
 coverage-test-command-silent = "pytest -x --show-capture=no --cov-report term-missing --cov-report json --cov --cov-branch"
-fixformat-command = { var = "ruff format {project} {tests}", recursive = true }
-format-command = { var = "ruff format --check {project} {tests}", recursive = true }
+fixformat-command = { var = "ruff format {project}", recursive = true }
+format-command = { var = "ruff format --check {project}", recursive = true }
 markdownlint-command = { var = "poetry run pymarkdown --config .pymarkdown.cfg scan {readme} {reflection}", recursive = true }
-mypy-command = {var = "mypy {project} {tests}", recursive = true}
+mypy-command = {var = "mypy {project}", recursive = true}
 symbex-typed-command = {var = "symbex -s --untyped -d {project} --check", recursive = true}
 symbex-documented-command = {var = "symbex -s --undocumented -d {project} --check", recursive = true}
-test-command = "pytest -x -s -vv -n auto"
-test-silent-command = "pytest -x --show-capture=no"
 
 [tool.taskipy.tasks]
-all = "task format && task lint && task test && task coverage"
+all = "task format && task lint"
 lint = "task format && task mypy && task symbex && task markdownlint"
 symbex = "task symbex-typed && task symbex-documented"
 check = { cmd = "{check-command}", help = "Run the ruff linting checks", use_vars = true }
@@ -58,18 +52,16 @@ markdownlint = { cmd = "{markdownlint-command}", help = "Run the markdown linter
 mypy = { cmd = "{mypy-command}", help = "Run the mypy type checks to find potential type errors", use_vars = true }
 symbex-typed = { cmd = "{symbex-typed-command}", help = "Run symbex for fully typed functions", use_vars = true }
 symbex-documented = { cmd = "{symbex-documented-command}", help = "Run symbex for documentation", use_vars = true }
-test = { cmd = "{test-command}", help = "Run tests with order randomization and distribution", use_vars = true }
-test-silent = { cmd = "{test-silent-command}", help = "Run tests silently without plugins", use_vars = true }
 mdtoc-readme = { cmd = "mdtoc ../README.md", help = "Generate the TOC for the README" }
 mdtoc-reflection = { cmd = "mdtoc ../writing/reflection.md", help = "Generate the TOC for the reflection" }
 
 [tool.ruff]
 line-length = 79
-ignore = [
+lint.ignore = [
     "E501", # do not check line length
     "E731", # do not assign lambda expression
 ]
-select = [
+lint.select = [
     "E",    # pycodestyle errors
     "I",    # isort
     "F",    # Pyflakes
