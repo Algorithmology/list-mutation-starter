@@ -14,7 +14,10 @@ cli = typer.Typer()
 console = Console()
 
 # TODO: Make sure that you implement all of the required functions in the other
-# file that will ensure that these function(s) work correctly.
+# files that will ensure that these function(s) work correctly.
+
+# TODO: Add all of the required features for each of the steps that are documented
+# with additional TODO markers inside of the main function provided below.
 
 
 @cli.command()
@@ -44,28 +47,13 @@ def main(
     console.print(f"Benchmarking strategy: {strategy}")
     console.print(f"Benchmarking operation: {operation}")
     console.print(f"Number of runs: {runs}\n")
-    # perform the benchmarking operation
-    benchmark_data = benchmark.benchmark(
-        listtype, listdata, strategy, operation, startsize, runs
-    )
-    console.print()
-    # display the results concerning the minimum execution time
+    # TODO: perform the benchmarking operation
+    # TODO: display the results concerning the minimum execution time
     # --> minimum value
-    minimum_results = benchmark.find_minimum(benchmark_data)
-    console.print(
-        f"Minimum execution time: {minimum_results[2]:.10f} seconds",
-        f"for run {minimum_results[0]} with size {minimum_results[1]}",
-    )
+    # TODO: display the results concerning the maximum execution time
     # --> maximum value
-    maximum_results = benchmark.find_maximum(benchmark_data)
-    console.print(
-        f"Maximum execution time: {maximum_results[2]:.10f} seconds",
-        f"for run {maximum_results[0]} with size {maximum_results[1]}",
-    )
+    # TODO: display the results concerning the average execution time
     # --> average value
-    console.print()
-    average_value = benchmark.compute_average(benchmark_data)
-    console.print(
-        f"Average execution time: {average_value:.10f} seconds"
-        f" across runs 1 through {len(benchmark_data)}"
-    )
+    # TODO: make sure that all of the output from running the benchmarks
+    # is formatted, justified, and aligned in a consistent and helpful fashion
+    # TODO: see the README.md file for an example of correctly formatted output
