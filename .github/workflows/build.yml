@@ -35,12 +35,12 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        python-version: ["3.11"]
+        python-version: ["3.12"]
         include:
           - os: macos-latest
-            python-version: "3.11"
+            python-version: "3.12"
           - os: windows-latest
-            python-version: "3.11"
+            python-version: "3.12"
     # Define the workflow steps
     steps:
     # Checkout the code of the repository
@@ -69,22 +69,29 @@ jobs:
           if: always()
           uses: abatilo/actions-poetry@v2.0.0
           with:
-            poetry-version: 1.7.1
+            poetry-version: 2.0.0
         # Install dependencies
-        - name: Install dependencies
+        - name: Install Dependencies
           if: always()
           run: |
             cd listmutator
             poetry install
         # Run the program
-        - name: Run program
-          if: always() && matrix.os == 'ubuntu-latest'
+        - name: Run Program with Different Arguments
+          if: always()
           run: |
             cd listmutator
             poetry run listmutator --operation add --startsize 10000 --runs 10 --listtype singlylinked 
+            poetry run listmutator --operation iadd --startsize 10000 --runs 10 --listtype singlylinked 
+            poetry run listmutator --operation removefirst --startsize 10000 --runs 10 --listtype singlylinked 
+            poetry run listmutator --operation removelast --startsize 10000 --runs 10 --listtype singlylinked 
+            poetry run listmutator --operation add --startsize 10000 --runs 10 --listtype doublylinked 
+            poetry run listmutator --operation iadd --startsize 10000 --runs 10 --listtype doublylinked 
+            poetry run listmutator --operation removefirst --startsize 10000 --runs 10 --listtype doublylinked 
+            poetry run listmutator --operation removelast --startsize 10000 --runs 10 --listtype doublylinked 
         # Run GatorGrader: see config/gatorgrade.yml
         - name: Run GatorGrader with GatorGrade
-          if: always() && matrix.os == 'ubuntu-latest'
+          if: always()
           run:  |
             pip install gatorgrade
             gatorgrade --config config/gatorgrade.yml --report env md GITHUB_STEP_SUMMARY
