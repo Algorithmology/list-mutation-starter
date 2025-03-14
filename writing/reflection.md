@@ -35,8 +35,11 @@ output
 TODO: Provide the complete command-lines for your uses of the `listmutator` program
 
 TODO: Provide your own example of a command and the output that it produces
+
 TODO: Make sure that each run is for a unique configuration of the tool
+
 TODO: Make sure that each run is only for the use of the tool with the specified data structure
+
 TODO: Make sure that you provide sufficient evidence to support your results analysis
 
 - `command`
@@ -50,8 +53,11 @@ output
 TODO: Provide the complete command-lines for your uses of the `listmutator` program
 
 TODO: Provide your own example of a command and the output that it produces
+
 TODO: Make sure that each run is for a unique configuration of the tool
+
 TODO: Make sure that each run is only for the use of the tool with the specified data structure
+
 TODO: Make sure that you provide sufficient evidence to support your results analysis
 
 - `command`
@@ -119,40 +125,15 @@ TODO: It is not sufficient to ONLY discuss the empirical results! You must also
 state and explain the worst-case time complexities for each of the stated
 methods!
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
 ## Professional Development
 
 ### Overall, what are the trade-offs associated with building/using a SLL/DLL?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
 ### What is challenging about designing/running an experiment to evaluate the performance of SLL/DLL?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ### Take Home Points
 
