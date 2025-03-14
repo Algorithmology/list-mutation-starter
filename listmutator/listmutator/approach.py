@@ -2,6 +2,10 @@
 
 from enum import Enum
 
+# TODO: Make sure that you understand how all of these constants
+# work and the ways in which they are used in the other module(s)
+# of the listmutator program.
+
 
 class ListType(str, Enum):
     """Define the type of the lists subject to benchmarking."""
