@@ -82,32 +82,32 @@ through the use of the `+` operator
 - `__iadd__` that performs the concatenation of two `SLL` or `DLL` instances
 through the use of the `+=` operator
 
-Your implementation of the `SinglyLinkedList` and `DoublyLinkedList` classes
-must adhere to the specification and design provided on the course website. In
-addition to providing empirical results in this file you must state what you
-think is the worst-case time complexity of each of the operations in the above
-list. You must also state whether or not your empirical results confirm and/or
-contradict these stated worst-case time complexities. Please note that if the
-course website does not provide an implementation of a specific method then you
-must create your own implementation that carefully follows the principles to
-which the other operations adhere. Finally, while your experiments are only
-required to use an input doubling approach to, for instance, study the use of
-`int` data inside of the `SLL` and `DLL` instances, you may also consider how
-different data types may influence the performance of these required
-operations.
+TODO: Your implementation of the `SinglyLinkedList` and `DoublyLinkedList`
+classes must adhere to the specification and design provided on the course
+website. In addition to providing empirical results in this file you must state
+what you think is the worst-case time complexity of each of the operations in
+the above list. You must also state whether or not your empirical results
+confirm and/or contradict these stated worst-case time complexities. Please
+note that if the course website does not provide an implementation of a
+specific method then you must create your own implementation that carefully
+follows the principles to which the other operations adhere. Finally, while
+your experiments are only required to use an input doubling approach to, for
+instance, study the use of `int` data inside of the `SLL` and `DLL` instances,
+you may also consider how different data types may influence the performance of
+these required operations.
 
-TODO: In addition to stating your research questions, this section should have a
-summary of your experimental results and an analysis of what those results tell
-you about the performance of the operations provided by the `SinglyLinkedList`
-and the `DoublyLinkedList` classes.
+TODO: In addition to stating your research questions, this section should have
+a summary of your experimental results and an analysis of what those results
+tell you about the performance of the operations provided by the
+`SinglyLinkedList` and the `DoublyLinkedList` classes.
 
-TODO: Make sure that your responses explain WHY certain configurations are faster!
+TODO: Make sure that your responses explain WHY certain configurations are faster.
 
-TODO: It is not sufficient to ONLY explain WHICH configuration is faster!
+TODO: It is not sufficient to ONLY explain WHICH configuration is faster.
 
-TODO: It is not sufficient to ONLY discuss the empirical results! You must also
+TODO: It is not sufficient to ONLY discuss the empirical results. You must also
 state and explain the worst-case time complexities for each of the stated
-methods!
+methods for which you have provided empirical results.
 
 ## Professional Development
 
