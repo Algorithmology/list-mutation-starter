@@ -18,15 +18,11 @@ while completing the project.
 
 #### First output from running the `systemsense` program
 
-```text
-output
-```
+TODO: Provide the complete command-line for running and output from running the `systemsense` program
 
 #### Second output from running the `systemsense` program
 
-```text
-output
-```
+TODO: Provide the complete command-line for running and output from running the `systemsense` program
 
 ### Use two fenced code blocks to provide output from all different runs of `listmutator` for the two data types
 
@@ -42,12 +38,6 @@ TODO: Make sure that each run is only for the use of the tool with the specified
 
 TODO: Make sure that you provide sufficient evidence to support your results analysis
 
-- `command`
-
-```text
-output
-```
-
 #### Provide the command output for the runs of the `listmutator` with the `DLL`
 
 TODO: Provide the complete command-lines for your uses of the `listmutator` program
@@ -59,12 +49,6 @@ TODO: Make sure that each run is for a unique configuration of the tool
 TODO: Make sure that each run is only for the use of the tool with the specified data structure
 
 TODO: Make sure that you provide sufficient evidence to support your results analysis
-
-- `command`
-
-```text
-output
-```
 
 ## Data Tables
 
