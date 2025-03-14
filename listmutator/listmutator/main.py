@@ -5,7 +5,7 @@
 import typer
 from rich.console import Console
 
-from listmutator import approach, benchmark
+from listmutator import approach
 
 # create a Typer object to support the command-line interface
 cli = typer.Typer()
