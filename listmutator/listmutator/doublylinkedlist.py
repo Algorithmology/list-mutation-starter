@@ -8,6 +8,8 @@
 # standards described in the project guidelines and on the
 # course website.
 
+# TODO: Make sure that you use a ListNode for a DoublyLinkedList
+
 # TODO: You may reuse source code from the course textbook's GitHub repository
 # or from the source web site provided that you cite your sources
 
