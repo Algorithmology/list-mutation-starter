@@ -8,12 +8,14 @@
 # standards described in the project guidelines and on the
 # course website.
 
+# TODO: Make sure that you use a ListNode for a SinglyLinkedList
+
 # TODO: You may reuse source code from the course textbook's GitHub repository
 # or from the source web site provided that you cite your sources
 
 # TODO: Implement the following methods for a SinglyLinkedList:
 # __init__ - Initialize a contained ListNode.
-# __init__ - Initialize the doubly linked list.
+# __init__ - Initialize the singly linked list.
 # __len__ - Return the length of the list.
 # addfirst - Add a node with the provided item to the front of the list.
 # addlast - Add a node with the provided item to the end of the list.
